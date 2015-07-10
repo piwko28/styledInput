@@ -1,0 +1,45 @@
+/*! STYLED INPUT */
+
+.styledInput {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.styledInput select,
+.styledInput input,
+.styledInput textarea {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent none;
+  vertical-align: top;
+  -ms-filter: "progid : DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.styledInput span {
+  position: relative;
+  display: block;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.styledInput input[type=checkbox] + span,
+.styledInput input[type=radio] + span,
+.styledInput input[type=file] + span {
+  display: none;
+}
