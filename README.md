@@ -27,3 +27,41 @@ We will get:
   <span>Value 1</span>
 </div>
 ```
+
+
+## Angular directive
+
+Add styledinput.js and angular.styledinput.js to head section.
+
+
+Add a module to your angular application, ex.:
+
+```js
+angular.module('yourApp', ['styledInput']);
+```
+
+
+Now you can use styled input in your angular applications by adding styled-input attribute:
+
+```html
+<input type="checkbox" styled-input>
+```
+
+
+As a value you can put wrapper class:
+
+```html
+<select styled-input="select">
+```
+
+
+Other properties:
+
+```html
+<input type="radio"
+  name="hobby"
+  styled-input="radio"
+  styled-input-id="hobby"
+  styled-input-before
+  styled-input after>
+```
